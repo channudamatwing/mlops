@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Flask Application</title>
+</head>
+
+<body>
+  <div id="app">
+    <p>
+      Message from server is: {{message}}
+    </p>
+  </div>
+  <script type="module">
+    import {createApp} from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+    createApp({
+      data(){
+        return{
+          message: 'Hello World'
+        }
+      },
+    }).mount('#app')
+  </script>
+</body>
+
+</html>
